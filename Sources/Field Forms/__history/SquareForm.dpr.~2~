@@ -1,0 +1,14 @@
+program SquareForm;
+
+uses
+  Vcl.Forms,
+  IFormBuilder in 'IFormBuilder.pas',
+  FormDrawer in 'FormDrawer.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.Run;
+end.

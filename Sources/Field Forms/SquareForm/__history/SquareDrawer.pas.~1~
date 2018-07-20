@@ -1,0 +1,29 @@
+unit SquareDrawer;
+
+interface
+
+uses
+  IFormSquareBuilder;
+
+type
+  xxTFormDrawer = class(TInterfacedObject,
+                        xxIFormSquareMaster)
+
+    procedure Draw(AFieldSize, AMineSize : Integer; AFormName : String);
+    procedure ClearComponents;
+
+  end;
+
+implementation
+
+procedure xxTFormDrawer.ClearComponents;
+begin
+
+end;
+
+procedure xxTFormDrawer.Draw(AFieldSize, AMineSize : Integer; AFormName : String);
+begin
+
+end;
+
+end.

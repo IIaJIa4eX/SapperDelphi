@@ -1,0 +1,17 @@
+unit MainGame;
+
+interface
+
+
+
+type
+  IGameMaster = interface
+    ['{2366180E-5917-412B-81C7-0999AEBED0B0}']
+    procedure Build(AWidth, AHeight : Integer);
+    procedure ClearComponents;
+
+  end;
+
+implementation
+
+end.

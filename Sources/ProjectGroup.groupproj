@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6F4410C5-F636-4BBF-8726-AABCA60B6B85}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SapperUltra.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Field Forms\SquareForm\SquareForm.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Field Forms\TriangleForm\TriangleForm.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Field Skins\ClassicSkin\ClassicSkin.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Field Skins\UrbanSkin\UrbanSkin.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SapperUltra">
+        <MSBuild Projects="SapperUltra.dproj"/>
+    </Target>
+    <Target Name="SapperUltra:Clean">
+        <MSBuild Projects="SapperUltra.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SapperUltra:Make">
+        <MSBuild Projects="SapperUltra.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SquareForm">
+        <MSBuild Projects="Field Forms\SquareForm\SquareForm.dproj"/>
+    </Target>
+    <Target Name="SquareForm:Clean">
+        <MSBuild Projects="Field Forms\SquareForm\SquareForm.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SquareForm:Make">
+        <MSBuild Projects="Field Forms\SquareForm\SquareForm.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TriangleForm">
+        <MSBuild Projects="Field Forms\TriangleForm\TriangleForm.dproj"/>
+    </Target>
+    <Target Name="TriangleForm:Clean">
+        <MSBuild Projects="Field Forms\TriangleForm\TriangleForm.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TriangleForm:Make">
+        <MSBuild Projects="Field Forms\TriangleForm\TriangleForm.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClassicSkin">
+        <MSBuild Projects="Field Skins\ClassicSkin\ClassicSkin.dproj"/>
+    </Target>
+    <Target Name="ClassicSkin:Clean">
+        <MSBuild Projects="Field Skins\ClassicSkin\ClassicSkin.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClassicSkin:Make">
+        <MSBuild Projects="Field Skins\ClassicSkin\ClassicSkin.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="UrbanSkin">
+        <MSBuild Projects="Field Skins\UrbanSkin\UrbanSkin.dproj"/>
+    </Target>
+    <Target Name="UrbanSkin:Clean">
+        <MSBuild Projects="Field Skins\UrbanSkin\UrbanSkin.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UrbanSkin:Make">
+        <MSBuild Projects="Field Skins\UrbanSkin\UrbanSkin.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SapperUltra;SquareForm;TriangleForm;ClassicSkin;UrbanSkin"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SapperUltra:Clean;SquareForm:Clean;TriangleForm:Clean;ClassicSkin:Clean;UrbanSkin:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SapperUltra:Make;SquareForm:Make;TriangleForm:Make;ClassicSkin:Make;UrbanSkin:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

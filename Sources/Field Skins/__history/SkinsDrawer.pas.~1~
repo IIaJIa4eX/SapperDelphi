@@ -1,0 +1,31 @@
+unit SkinsDrawer;
+
+interface
+
+uses
+  ISkins;
+  type
+  xxTSkinsDrawer = class(TInterfacedObject,
+                        xxISkinsMaster)
+
+    procedure Draw(ASkinName : String);
+    procedure ClearComponents;
+
+  end;
+implementation
+
+
+
+{ xxTSkinsDrawer }
+
+procedure xxTSkinsDrawer.ClearComponents;
+begin
+
+end;
+
+procedure xxTSkinsDrawer.Draw(ASkinName: String);
+begin
+
+end;
+
+end.

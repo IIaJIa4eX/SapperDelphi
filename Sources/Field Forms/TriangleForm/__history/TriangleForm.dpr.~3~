@@ -1,0 +1,13 @@
+program TriangleForm;
+
+uses
+  Vcl.Forms,
+  TriangleDrawer in 'TriangleDrawer.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.Run;
+end.

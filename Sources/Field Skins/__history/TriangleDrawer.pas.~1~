@@ -1,0 +1,21 @@
+unit FormDrawer;
+
+interface
+
+uses
+  ISkins;
+
+type
+  xxTSkinsDrawer = class(TInterfacedObject,
+                         xxIFormTriangleMaster)
+
+    procedure Draw(ASkinName : String);
+    procedure ClearComponents;
+
+  end;
+
+implementation
+
+
+
+end.

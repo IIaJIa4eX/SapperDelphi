@@ -1,0 +1,13 @@
+program UrbanSkin;
+
+uses
+  Vcl.Forms,
+  UrbanDrawer in 'UrbanDrawer.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.Run;
+end.

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.118,=C:\Users\Alexander\Desktop\Delphi Miner\Sources\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.366,C:\Users\Alexander\Desktop\Delphi Miner\Sources\Unit1.pas=C:\Users\Alexander\Desktop\Delphi Miner\Sources\Interfaces\GameSkin.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.543,=C:\Users\Alexander\Desktop\Delphi Miner\Sources\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.077,C:\Users\Alexander\Desktop\Delphi Miner\Sources\Unit2.pas=C:\Users\Alexander\Desktop\Delphi Miner\Sources\Interfaces\FieldLogic.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,14 @@
+program TriangleForm;
+
+uses
+  Vcl.Forms,
+  IFormTriangleBuilder in '..\..\Field Skins\IFormTriangleBuilder.pas',
+  TriangleDrawer in '..\..\Field Skins\TriangleDrawer.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.Run;
+end.

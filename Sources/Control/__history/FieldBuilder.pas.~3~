@@ -1,0 +1,32 @@
+unit FieldBuilder;
+
+interface
+
+uses
+  IGame;
+
+
+implementation
+
+type
+  TFieldBuilder = class(TInterfacedObject,
+                        IGameMaster)
+
+    procedure Build(AWidth, AHeight : Integer);
+    procedure ClearComponents;
+
+  end;
+
+{ TFieldBuilder }
+
+procedure TFieldBuilder.Build(Width, Height: Integer);
+begin
+
+end;
+
+procedure TFieldBuilder.ClearComponents;
+begin
+
+end;
+
+end.

@@ -1,0 +1,29 @@
+unit UrbanDrawer;
+
+interface
+
+uses
+  ISkinUrbanBuilder;
+
+type
+  xxTSkinDrawer = class(TInterfacedObject,
+                        xxISkinUrbanMaster)
+
+    procedure Draw(ASkinName : String);
+    procedure ClearComponents;
+
+  end;
+
+implementation
+
+procedure xxTSkinDrawer.ClearComponents;
+begin
+
+end;
+
+procedure xxTSkinDrawer.Draw(ASkinName : String);
+begin
+
+end;
+
+end.

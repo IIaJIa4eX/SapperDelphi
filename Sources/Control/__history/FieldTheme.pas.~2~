@@ -1,0 +1,21 @@
+unit FieldTheme;
+
+interface
+
+uses
+  IGame;
+
+
+
+type
+  TMainThemeBuilder = class(TInterfacedObject,
+                            IGameMaster)
+
+    function Builder(Width, Height : Integer);
+    function ClearComponents;
+
+  end;
+
+implementation
+
+end.

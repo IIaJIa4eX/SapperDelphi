@@ -1,0 +1,29 @@
+unit ClassicDrawer;
+
+interface
+
+uses
+  ISkinClassicBuilder;
+
+type
+  xxTSkinDrawer = class(TInterfacedObject,
+                        xxISkinClassicMaster)
+
+    procedure Draw(ASkinName : String);
+    procedure ClearComponents;
+
+  end;
+
+implementation
+
+procedure xxTSkinDrawer.ClearComponents;
+begin
+
+end;
+
+procedure xxTSkinDrawer.Draw(ASkinName : String);
+begin
+
+end;
+
+end.

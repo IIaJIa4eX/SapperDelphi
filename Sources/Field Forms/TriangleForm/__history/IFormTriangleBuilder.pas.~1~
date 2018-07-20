@@ -1,0 +1,15 @@
+unit IFormTriangleBuilder;
+
+interface
+
+type
+  xxIFormTriangleMaster = interface
+    ['{E01A772B-DA78-447E-917A-237B9A48653F}']
+    procedure Draw(AFieldSize, AMineSize : Integer; AFormName : String);
+    procedure ClearComponents;
+
+  end;
+
+implementation
+
+end.

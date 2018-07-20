@@ -1,0 +1,31 @@
+unit FormDrawer;
+
+interface
+
+uses
+  IFormBuilder;
+
+type
+  xxTFormDrawer = class(TInterfacedObject,
+                        xxIFormMaster)
+
+    procedure Draw(AFormName : String);
+    procedure ClearComponents;
+
+  end;
+
+implementation
+
+{ xxTFormDrawer }
+
+procedure xxTFormDrawer.ClearComponents;
+begin
+
+end;
+
+procedure xxTFormDrawer.Draw(AFormName: String);
+begin
+
+end;
+
+end.

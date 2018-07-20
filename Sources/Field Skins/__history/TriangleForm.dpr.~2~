@@ -1,0 +1,14 @@
+program TriangleForm;
+
+uses
+  Vcl.Forms,
+  ISkins in 'ISkins.pas',
+  SkinsDrawer in 'SkinsDrawer.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.Run;
+end.

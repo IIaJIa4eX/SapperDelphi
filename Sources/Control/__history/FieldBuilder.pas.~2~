@@ -1,0 +1,19 @@
+unit FieldBuilder;
+
+interface
+
+uses
+  IGame;
+
+implementation
+
+type
+  TFieldBuilder = class(TInterfacedObject,
+                   IGameMaster,)
+
+    function Builder(Width, Height : Integer);
+    function ClearComponents;
+
+  end;
+
+end.
