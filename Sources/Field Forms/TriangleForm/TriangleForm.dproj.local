@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.048,=C:\Users\Alexander\Desktop\Delphi Miner\Sources\Interfaces\FieldLogic.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.097,C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\FormDrawer.pas=C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\TriangleDrawer.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.602,C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\sapperSkins.dproj=C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\TriangleForm.dproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.947,C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\IFormTriangleBuilder.pas=C:\Users\Alexander\Desktop\Delphi Miner\Field Forms\TriangleForm\IFormTriangleBuilder.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.045,C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\ISkins.pas=C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\IFormTriangleBuilder.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.602,C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\sapperSkins.dproj=C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\TriangleForm.dproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.517,C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\SkinsDrawer.pas=C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\FormDrawer.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.032,C:\Users\Alexander\Desktop\Delphi Miner\Sources\Field Forms\TriangleForm\IFormTriangleBuilder.pas=</Transaction>
     <Transaction>1899.12.30 00:00:00.000.466,C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\TriangleForm.dproj=C:\Users\Alexander\Desktop\Delphi Miner\Field Forms\TriangleForm\TriangleForm.dproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.097,C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\FormDrawer.pas=C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\TriangleDrawer.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.517,C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\SkinsDrawer.pas=C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\FormDrawer.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.526,C:\Users\Alexander\Desktop\Delphi Miner\Field Skins\TriangleDrawer.pas=C:\Users\Alexander\Desktop\Delphi Miner\Field Forms\TriangleForm\TriangleDrawer.pas</Transaction>
-    <Transaction>2018.07.20 16:40:51.048,=C:\Users\Alexander\Desktop\Delphi Miner\Sources\Interfaces\FieldLogic.pas</Transaction>
   </Transactions>
 </BorlandProject>
