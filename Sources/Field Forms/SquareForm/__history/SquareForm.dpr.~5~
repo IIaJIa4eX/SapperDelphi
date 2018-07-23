@@ -1,6 +1,8 @@
 library SquareForm;
 
 uses
+  System.SysUtils,
+  System.Classes,
   SquareDrawer in 'SquareDrawer.pas',
   FieldLogic in '..\..\Interfaces\FieldLogic.pas';
 
