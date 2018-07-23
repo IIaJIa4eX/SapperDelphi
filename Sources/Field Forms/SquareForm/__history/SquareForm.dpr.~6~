@@ -2,7 +2,7 @@ library SquareForm;
 
 uses
   SquareDrawer in 'SquareDrawer.pas',
-  GameLogic in '..\..\Interfaces\GameLogic.pas';
+  FieldLogic in '..\..\Interfaces\FieldLogic.pas';
 
 {$R *.res}
 

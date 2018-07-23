@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.914,=C:\Users\Alexander\Desktop\Delphi Miner\Sources\Interfaces\FieldLogic.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.459,C:\Users\Alexander\Desktop\Delphi Miner\Sources\Field Forms\SquareForm\IFormSquareBuilder.pas=</Transaction>
+  <Transactions>
+    <Transaction>2018.07.23 15:36:31.115,C:\Users\Alexander\Desktop\Delphi Miner\Sources\Interfaces\GameLogic.pas=C:\Users\Alexander\Desktop\Delphi Miner\Sources\Interfaces\FieldLogic.pas</Transaction>
   </Transactions>
 </BorlandProject>

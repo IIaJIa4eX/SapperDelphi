@@ -1,8 +1,9 @@
 library TriangleForm;
 
 uses
+
   TriangleDrawer in 'TriangleDrawer.pas',
-  GameLogic in '..\..\Interfaces\GameLogic.pas';
+  FieldLogic in '..\..\Interfaces\FieldLogic.pas';
 
 {$R *.res}
 
