@@ -4,6 +4,8 @@ interface
 
 uses
   Winapi.Windows,
+  Math,
+  mmSystem,
   Winapi.Messages,
   System.SysUtils,
   System.Variants,
@@ -12,29 +14,66 @@ uses
   Vcl.Controls,
   Vcl.Forms,
   Vcl.Dialogs,
-  Vcl.StdCtrls;
+  Vcl.StdCtrls,
+  Vcl.Imaging.pngimage,
+  Vcl.Imaging.jpeg,
+  Vcl.ExtCtrls,
+  Vcl.MPlayer;
 
 type
   TMain_Form = class(TForm)
+    BackGroundImg : TImage;
+    ThermalBombMenu : TImage;
+    Timer : TTimer;
+    MediaPlayer : TMediaPlayer;
+    procedure TimerTimer(Sender : TObject);
+    procedure FormCreate(Sender : TObject);
 
-    edt_fieldSize : TEdit;
-    btn_start : TButton;
-    edt_mineQuantity : TEdit;
-    cmb_fieldTheme : TComboBox;
-    lbl_fieldSize : TLabel;
-    lbl_mineQuantity : TLabel;
-    lbl_fieldTheme : TLabel;
-    cmb_fieldForm : TComboBox;
-    lbl_fieldForm : TLabel;
   end;
+
+const
+
+  rad = 10;
 
 var
   MainView              : TMain_Form;
   AFieldSize, AMineSize : Integer;
   ASkinName             : String;
+  FfallingBobm          : Boolean;
+  FAngle                : real;
 
 implementation
 
 {$R *.dfm}
+
+procedure TMain_Form.FormCreate(Sender : TObject);
+begin
+
+  ClientHeight        := ThermalBombMenu.Height;
+  ClientWidth         := ThermalBombMenu.Width;
+  ThermalBombMenu.Top := -(ThermalBombMenu.Height);
+  FfallingBobm        := true;
+  FAngle              := 0;
+  Timer.Interval      := 100;
+  MediaPlayer.Play;
+end;
+
+procedure TMain_Form.TimerTimer(Sender : TObject);
+begin
+
+  if (FfallingBobm and (ThermalBombMenu.Top < ClientRect.Top)) then
+  begin
+    ThermalBombMenu.Top := ThermalBombMenu.Top + 10
+  end
+  else
+  begin
+    FfallingBobm         := false;
+    Timer.Interval       := 20;
+    ThermalBombMenu.Left := Round(rad * cos(FAngle));
+    ThermalBombMenu.Top  := Round(rad * sin(FAngle));
+    FAngle               := FAngle + pi / 37;
+  end;
+
+end;
 
 end.

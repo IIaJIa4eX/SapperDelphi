@@ -104,6 +104,7 @@
         </DelphiCompile>
         <DCCReference Include="UrbanDrawer.pas"/>
         <DCCReference Include="..\..\Interfaces\GameSkin.pas"/>
+        <DCCReference Include="..\..\Interfaces\IPlugInController.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

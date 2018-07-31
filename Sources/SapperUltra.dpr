@@ -6,13 +6,15 @@ uses
   MainGame in 'Interfaces\MainGame.pas',
   FieldBuilder in 'Control\FieldBuilder.pas',
   GameSkin in 'Interfaces\GameSkin.pas',
-  GameLogic in 'Interfaces\GameLogic.pas';
+  GameLogic in 'Interfaces\GameLogic.pas',
+  PlugInsHolder in 'Control\PlugInsHolder.pas',
+  IPlugInController in 'Interfaces\IPlugInController.pas';
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TMainView, MainView);
+  Application.CreateForm(TMain_Form, MainView);
   Application.Run;
 end.
