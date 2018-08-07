@@ -1,13 +1,24 @@
-program SquareForm;
+library SquareForm;
 
 uses
-  Vcl.Forms,
-  SquareDrawer in 'SquareDrawer.pas';
+  SquareDrawer in 'SquareDrawer.pas',
+  GameLogic in '..\..\Interfaces\GameLogic.pas',
+  IPlugInController in '..\..\Interfaces\IPlugInController.pas';
 
 {$R *.res}
 
+function PlugInsCount : Integer; stdcall; export;
 begin
-  Application.Initialize;
-  Application.MainFormOnTaskbar := True;
-  Application.Run;
+
+end;
+
+function CreatePlugIn(AIndex : Integer) : IxxPlugIn; stdcall; export;
+begin
+end;
+
+exports
+  PlugInsCount, CreatePlugIn;
+
+begin
+
 end.

@@ -1,13 +1,24 @@
-program ClassicSkin;
+library ClassicSkin;
 
 uses
-  Vcl.Forms,
-  ClassicDrawer in 'ClassicDrawer.pas';
+  ClassicDrawer in 'ClassicDrawer.pas',
+  GameSkin in '..\..\Interfaces\GameSkin.pas',
+  IPlugInController in '..\..\Interfaces\IPlugInController.pas';
 
 {$R *.res}
 
+function PlugInsCount : Integer; stdcall;
 begin
-  Application.Initialize;
-  Application.MainFormOnTaskbar := True;
-  Application.Run;
+
+end;
+
+function CreatePlugIn(AIndex : Integer) : IxxPlugIn; stdcall;
+begin
+end;
+
+exports
+  PlugInsCount, CreatePlugIn;
+
+begin
+
 end.

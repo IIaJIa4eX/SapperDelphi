@@ -7,20 +7,17 @@ uses
 
 {$R *.res}
 
-function PlugInsCount : Integer; export;
+function PlugInsCount : Integer; stdcall; export;
 begin
 
 end;
 
-function CreatePlugIn(AIndex : Integer) : IxxPlugIn; export;
+function CreatePlugIn(AIndex : Integer) : IxxPlugIn; stdcall; export;
 begin
 end;
 
 exports
-  PlugInsCount;
-
-exports
-  CreatePlugIn;
+  PlugInsCount name 'SquareFormCount', CreatePlugIn name 'CreatePlugInSquareForm';
 
 begin
 

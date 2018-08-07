@@ -1,0 +1,19 @@
+unit PlugInsHolder;
+
+interface
+
+uses
+  IPlugInController;
+
+implementation
+
+
+type
+  TxxApplication = class(TInterfacedObject,
+                         IxxPlugIn)
+
+  end;
+
+
+
+end.

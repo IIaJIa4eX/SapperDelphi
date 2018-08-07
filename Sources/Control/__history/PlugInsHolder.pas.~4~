@@ -1,0 +1,47 @@
+unit PlugInsHolder;
+
+interface
+
+uses
+  IPlugInController,
+  WinTypes;
+
+implementation
+
+type
+  TCountfunction = function                 : Integer; stdcall;
+  TCreatePlugIn  = function(AIndx : Integer) : IxxPlugIn; stdcall;
+
+var
+  CountF       : TCountfunction;
+  PlugInCreate : TCreatePlugIn;
+  HLib         : THandle;
+
+type
+  TxxApplication = class(TInterfacedObject,
+                         IxxPlugIn)
+
+  end;
+
+begin
+  HLib := 0;
+  try
+    HLib := LoadLibrary('SquareForm.dll');
+    if HLib > HINSTANCE_ERROR then
+    begin
+      CountF := GetProcAddress(HLib, 'SquareFormCount');
+      if Assigned(TCountfunction) then
+      begin
+
+      end
+      else
+        ShowMessage('Method with name SquareFormCount was not found');
+    end
+    else
+      ShowMessage('Can not load library FirstLib.dll');
+  finally
+    if HLib > HINSTANCE_ERROR then
+      FreeLibrary(HLib);
+  end;
+
+end.

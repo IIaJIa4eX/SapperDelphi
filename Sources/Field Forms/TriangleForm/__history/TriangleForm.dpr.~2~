@@ -1,14 +1,24 @@
-program TriangleForm;
+library TriangleForm;
 
 uses
-  Vcl.Forms,
-  IFormTriangleBuilder in 'IFormTriangleBuilder.pas',
-  TriangleDrawer in 'TriangleDrawer.pas';
+  TriangleDrawer in 'TriangleDrawer.pas',
+  GameLogic in '..\..\Interfaces\GameLogic.pas',
+  IPlugInController in '..\..\Interfaces\IPlugInController.pas';
 
 {$R *.res}
 
+function PlugInsCount : Integer; stdcall;
 begin
-  Application.Initialize;
-  Application.MainFormOnTaskbar := True;
-  Application.Run;
+
+end;
+
+function CreatePlugIn(AIndex : Integer) : IxxPlugIn; stdcall;
+begin
+end;
+
+exports
+  PlugInsCount, CreatePlugIn;
+
+begin
+
 end.

@@ -1,14 +1,27 @@
-program UrbanSkin;
+library UrbanSkin;
 
 uses
-  Vcl.Forms,
-  ISkinUrbanBuilder in 'ISkinUrbanBuilder.pas',
-  UrbanDrawer in 'UrbanDrawer.pas';
+  UrbanDrawer in 'UrbanDrawer.pas',
+  GameSkin in '..\..\Interfaces\GameSkin.pas',
+  IPlugInController in '..\..\Interfaces\IPlugInController.pas';
 
 {$R *.res}
 
+function PlugInsCount : Integer; export;
 begin
-  Application.Initialize;
-  Application.MainFormOnTaskbar := True;
-  Application.Run;
+
+end;
+
+function CreatePlugIn(AIndex : Integer) : IxxPlugIn; export;
+begin
+end;
+
+exports
+  PlugInsCount;
+
+exports
+  CreatePlugIn;
+
+begin
+
 end.
