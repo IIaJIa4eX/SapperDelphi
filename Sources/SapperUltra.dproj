@@ -143,7 +143,7 @@
         <DCCReference Include="Control\FieldBuilder.pas"/>
         <DCCReference Include="Interfaces\GameSkin.pas"/>
         <DCCReference Include="Interfaces\GameLogic.pas"/>
-        <DCCReference Include="Control\PlugInsHolder.pas"/>
+        <DCCReference Include="Control\xxApplication.pas"/>
         <DCCReference Include="Interfaces\IPlugInController.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

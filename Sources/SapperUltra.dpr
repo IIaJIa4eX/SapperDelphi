@@ -7,7 +7,7 @@ uses
   FieldBuilder in 'Control\FieldBuilder.pas',
   GameSkin in 'Interfaces\GameSkin.pas',
   GameLogic in 'Interfaces\GameLogic.pas',
-  PlugInsHolder in 'Control\PlugInsHolder.pas',
+  xxApplication in 'Control\xxApplication.pas',
   IPlugInController in 'Interfaces\IPlugInController.pas';
 
 {$R *.res}
